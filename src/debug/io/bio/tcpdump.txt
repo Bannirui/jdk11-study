@@ -1,0 +1,27 @@
+客户端->服务端 SYN包 第一次握手
+20:01:36.652605 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [S], seq 2417007309, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 1282302987 ecr 0,sackOK,eol], length 0
+
+服务端->客户端 SYN ACK包 第二次握手
+20:01:36.652676 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [S.], seq 149762789, ack 2417007310, win 65535, options [mss 16344,nop,wscale 6,nop,nop,TS val 1504529314 ecr 1282302987,sackOK,eol], length 0
+
+客户端->服务端 ACK包 第三次握手
+20:01:36.652707 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [.], ack 1, win 6379, options [nop,nop,TS val 1282302987 ecr 1504529314], length 0
+
+20:01:36.652720 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [.], ack 1, win 6379, options [nop,nop,TS val 1504529314 ecr 1282302987], length 0
+
+20:01:36.654206 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [P.], seq 1:23, ack 1, win 6379, options [nop,nop,TS val 1504529315 ecr 1282302987], length 22
+20:01:36.654227 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [.], ack 23, win 6379, options [nop,nop,TS val 1282302988 ecr 1504529315], length 0
+20:01:44.031065 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [P.], seq 1:5, ack 23, win 6379, options [nop,nop,TS val 1282310317 ecr 1504529315], length 4
+20:01:44.031132 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [.], ack 5, win 6379, options [nop,nop,TS val 1504536644 ecr 1282310317], length 0
+
+客户端->服务端 FIN包 第一次挥手
+20:01:44.031836 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [F.], seq 5, ack 23, win 6379, options [nop,nop,TS val 1282310317 ecr 1504536644], length 0
+
+服务端->客户端 ACK包 第二次挥手
+20:01:44.031862 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [.], ack 6, win 6379, options [nop,nop,TS val 1504536644 ecr 1282310317], length 0
+
+服务端->客户端 FIN包 第三次挥手
+20:01:44.032483 IP 127.0.0.1.9992 > 127.0.0.1.62866: Flags [F.], seq 23, ack 6, win 6379, options [nop,nop,TS val 1504536645 ecr 1282310317], length 0
+
+客户端->服务端 ACK包 第四次挥手
+20:01:44.032565 IP 127.0.0.1.62866 > 127.0.0.1.9992: Flags [.], ack 24, win 6379, options [nop,nop,TS val 1282310318 ecr 1504536645], length 0
